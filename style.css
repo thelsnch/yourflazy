@@ -1,0 +1,157 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-image: radial-gradient(circle, #ff7e5f, #feb47b); /* Радиальный градиент */
+    height: 100vh; /* Задаем высоту для полной растяжки */
+    margin: 0; /* Убираем отступы */
+}
+/* Меню */
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    font-weight: 600;
+}
+
+.navbar .logo img {
+    height: 40px;
+    width: auto;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu a:hover {
+    color: #ff5050;
+}
+
+.navbar .menu-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .menu-buttons .button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .menu-buttons .button.black {
+    background-color: black;
+    color: white;
+}
+
+.navbar .menu-buttons .button.black:hover {
+    background-color: #333;
+}
+
+/* Основной контент */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff5050;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: #e04444;
+    transform: scale(1.05);
+}
+
+.button.secondary {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.button.secondary:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+/* Контейнер для компліментів */
+.compliments-container {
+    text-align: center;
+    margin-top: 1px;
+}
+
+/* Стилі для аватарки користувача */
+.user-avatar {
+    margin-bottom: 10px;
+}
+
+.user-avatar img {
+    position: relative;
+    top: 400px; /* Зміщуємо тільки картинку вниз */
+    width: 652px; /* Ширина картинки */
+    height: 235px; /* Висота картинки */
+    box-shadow: 0 4px 10px rgb(255, 64, 64); /* Тінь */
+}
+
+.user-error img {
+    position: relative;
+    top: 100px; /* Зміщуємо тільки картинку вниз */
+    width: 1080px; /* Ширина картинки */
+    height: 1080px; /* Висота картинки */
+}
+
